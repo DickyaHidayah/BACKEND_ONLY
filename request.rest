@@ -1,0 +1,38 @@
+# GET semua notes
+GET http://localhost:3000/api/notes
+Accept: application/json
+
+###
+
+# GET satu note berdasarkan ID
+GET http://localhost:3000/api/notes/1
+Accept: application/json
+
+###
+
+# POST buat note baru
+POST http://localhost:3000/api/notes
+Content-Type: application/json
+
+{
+  "title": "Note Baru",
+  "datetime": "2024-06-20 12:00:00",
+  "note": "Ini adalah catatan baru"
+}
+
+###
+
+# PUT update note
+PUT http://localhost:3000/api/notes/1
+Content-Type: application/json
+
+{
+  "title": "Note Diperbarui",
+  "datetime": "2024-06-20 12:00:00",
+  "note": "Ini adalah catatan yang diperbarui"
+}
+
+###
+
+# DELETE note
+DELETE http://localhost:3000
